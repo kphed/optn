@@ -1,31 +1,38 @@
 {
-	"name": "optn",
-	"version": "1.0.0",
-	"description": "",
-	"main": "app.js",
-	"dependencies": {
-		"lotion": "^0.4.26"
-	},
-	"devDependencies": {
-		"eslint": "^6.6.0",
-		"eslint-config-airbnb": "^18.0.1",
-		"eslint-config-prettier": "^6.5.0",
-		"eslint-plugin-import": "^2.18.2",
-		"eslint-plugin-prettier": "^3.1.1",
-		"prettier": "^1.17.1"
-	},
-	"scripts": {
-		"start": "node app.js",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/kphed/optn.git"
-	},
-	"author": "Khoa Phan",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/kphed/optn/issues"
-	},
-	"homepage": "https://github.com/kphed/optn#readme"
+  "name": "optn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "engines": {
+    "node": ">=11.0"
+  },
+  "dependencies": {
+    "@agoric/ertp": "^0.1.11",
+    "coins": "^4.5.0",
+    "esm": "^3.2.25",
+    "lotion": "^0.4.26"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "nodemon": "^1.19.4",
+    "prettier": "^1.17.1"
+  },
+  "scripts": {
+    "start": "node -r esm ./src/app.js",
+    "dev": "nodemon -r esm ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kphed/optn.git"
+  },
+  "author": "Khoa Phan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kphed/optn/issues"
+  },
+  "homepage": "https://github.com/kphed/optn#readme"
 }
