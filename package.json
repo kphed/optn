@@ -1,0 +1,28 @@
+{
+  "name": "optn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.17.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kphed/optn.git"
+  },
+  "author": "Khoa Phan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kphed/optn/issues"
+  },
+  "homepage": "https://github.com/kphed/optn#readme"
+}
