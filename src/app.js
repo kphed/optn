@@ -1,15 +1,10 @@
 import lotion from 'lotion';
+import configureMiddleware from './util/configureMiddleware';
 
-let app = lotion({
-  initialState: {
-    count: 0,
-  },
+const app = lotion({
+  logTendermint: true,
 });
 
-app.use(function(state, tx) {
-  if (state.count === tx.nonce) {
-    state.count++;
-  }
-});
+configureMiddleware(app);
 
-app.start();
+app.start().then(({ GCI }) => console.log(`app started. gci: ${GCI}`));
